@@ -14,6 +14,7 @@ public class Calculadora {
 										  ));
 			String msg = " ";
 			double dResultado = 0;
+			
 			switch( acao ) {
 				case 1: 
 					dResultado = numero1 + numero2;
@@ -32,7 +33,8 @@ public class Calculadora {
 						dResultado = numero1 / numero2;
 						msg 	   = "A divisão é:"; 
 					} else {
-						
+						dResultado = 9999999999.99999999;
+						msg 	   = "Erro de divisão por zero";
 					}
 				break;
 				case 5:
